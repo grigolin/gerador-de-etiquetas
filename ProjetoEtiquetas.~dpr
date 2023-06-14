@@ -1,0 +1,19 @@
+program ProjetoEtiquetas;
+
+uses
+  Forms,
+  UnitPrincipal in 'UnitPrincipal.pas' {FmrPrincipal},
+  UnitCadastro in 'UnitCadastro.pas' {fmrCadastro},
+  UnitAlteracao in 'UnitAlteracao.pas' {FmrAlteracao},
+  UnitImpressao in 'UnitImpressao.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFmrPrincipal, FmrPrincipal);
+  Application.CreateForm(TfmrCadastro, fmrCadastro);
+  Application.CreateForm(TFmrAlteracao, FmrAlteracao);
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
